@@ -61,7 +61,7 @@ export const Form: React.FC = () => {
 
       if (email && nome) {
         try {
-          const response = await fetch("/dados", {
+          const response = await fetch("http://localhost:5000/dados", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ nome, email }),

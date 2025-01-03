@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Form } from './Form';
-import { Dados } from './Lista';
 
 export default function App() {
   useEffect(() => {
@@ -16,7 +15,6 @@ export default function App() {
   return (
     <>
     <Form />
-    <Dados />
     </>
   );
 }
